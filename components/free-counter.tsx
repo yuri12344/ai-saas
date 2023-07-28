@@ -35,7 +35,7 @@ export const FreeCounter = ({
                 <CardContent className="py-6">
                     <div className="text-center text-sm text-white mb-4 space-y-2">
                         <p>
-                            {apiLimitCount} / {MAX_FREE_COUNTS} Free generations
+                            {apiLimitCount} / {MAX_FREE_COUNTS} Usadas de graça
                         </p>
                         <Progress 
                             className="h-3"

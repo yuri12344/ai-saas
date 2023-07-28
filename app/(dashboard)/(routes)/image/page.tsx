@@ -74,8 +74,8 @@ const ImagePage = () => {
     return (
         <div>
             <Heading 
-                title="Image Generation"
-                description="Turn your prompt into a image ."
+                title="Gerador de Imagem"
+                description="Torne o prompt em imagem."
                 Icon={ImageIcon}
                 iconColor="text-pink-700"
                 bgColor="bg-pink-700/10"
@@ -96,7 +96,7 @@ const ImagePage = () => {
                                             <Input className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                                             disabled={isLoading}
                                             id="prompt"
-                                            placeholder="A picture of a horse in Swiss alps"
+                                            placeholder="Uma pintura de um cavalo nos alpes suiços"
                                             {...field}
                                             />
                                         </FormControl>
@@ -161,7 +161,7 @@ const ImagePage = () => {
                             />
                             <Button className="col-span-12 lg:col-span-2 w-full" 
                             disabled={isLoading}>
-                                Generate
+                                Gerar
                             </Button>
                         </form>
                     </Form>
@@ -174,7 +174,7 @@ const ImagePage = () => {
                     )}
 
                     {images.length == 0 && !isLoading &&  (
-                        <Empty label="No images generated."/>
+                        <Empty label="Nenhuma imagem gerada."/>
                     )}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
                         {images.map((src) => (

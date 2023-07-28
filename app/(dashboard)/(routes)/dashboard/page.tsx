@@ -1,55 +1,12 @@
 "use client";
 
-import {
-  ArrowRight,
-  MessageSquare,
-  Music,
-  ImageIcon,
-  VideoIcon,
-  Code
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation"
+import { tools } from "@/lib/utils";
 
 import { Card } from "@/components/ui/card"
 import { cn } from "@/lib/utils";
 
-export const tools = [
-  {
-    label: "Conversation",
-    icon: MessageSquare,
-    color: "text-violet-500",
-    bgColor: "bg-violet-500/10",
-    href: "/conversation",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
-    href: "/music",
-  },
-  {
-    label: "Image Generation",
-    icon: ImageIcon,
-    color: "text-ping-700",
-    bgColor: "bg-ping-700/10",
-    href: "/image",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-ping-700",
-    bgColor: "bg-ping-700/10",
-    href: "/video",
-  },
-  {
-    label: "Code Generation",
-    icon: Code,
-    color: "text-green-700",
-    bgColor: "bg-green-700/10",
-    href: "/code",
-  }
-]
 
 const DashboardPage = () => {
   const router= useRouter();
@@ -57,10 +14,10 @@ const DashboardPage = () => {
     <div>
       <div className="mb-8 space-y-4">
         <h2 className="text-2x1 md:text-4x1 font-bold text-center ">
-          Explore the power of AI
+          O poder da IA na palma da sua mão
         </h2>
         <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-          Chat with the smartest AI - Experience the power of AI
+          Experimente o poder da Inteligencia Artificial mais poderosa atualmente
         </p>
       </div>
       <div className="px-4 md:px-20 lg:px-32 space-y-4">

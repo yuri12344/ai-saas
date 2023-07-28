@@ -4,22 +4,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const testimonais = [
     {
-        name: "John Doe",
+        name: "Allan Balbi",
         avatar: "A",
-        title: "CEO of Company A",
-        description: "This is the best aplication I ever see"
+        title: "Fundador da empresa Magnata dos Queijos",
+        description: "Utilizar o ChatGPT-4 para gerar conteudo e criar imagens é uma mão na roda"
     },
     {
-        name: "John Doe",
-        avatar: "A",
-        title: "CEO of Company A",
-        description: "This is the best aplication I ever see"
-    },
-    {
-        name: "John Doe",
-        avatar: "A",
-        title: "CEO of Company A",
-        description: "This is the best aplication I ever see"
+        name: "Roberto",
+        avatar: "B",
+        title: "Fundador da Gula da Carol",
+        description: "Com Genius eu crio imagens e textos para meus criativos"
     }
 ]
 

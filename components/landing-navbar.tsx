@@ -33,7 +33,7 @@ export const LandingNavbar = () => {
             <div className="flex items-center ga-x-2">
                 <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
                     <Button variant="outline" className="rounded-full">
-                        Get Started
+                        Começar
                     </Button>
                 </Link>
             </div>

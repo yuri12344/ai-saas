@@ -64,8 +64,8 @@ const ConversationPage = () => {
     return (
         <div>
             <Heading 
-                title="Conversation"
-                description="Our most advanced conversation model yet."
+                title="Chat"
+                description="Converse com o ChatGPT-4, o modelo mais avançado de conversa atualmente."
                 Icon={MessageSquare}
                 iconColor="text-violet-500"
                 bgColor="bg-violet-500/10"
@@ -86,7 +86,7 @@ const ConversationPage = () => {
                                             <Input className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                                             disabled={isLoading}
                                             id="prompt"
-                                            placeholder="How do I calculate the radius of a circle?"
+                                            placeholder="Como eu calculo o raio de um circulo?"
                                             {...field}
                                             />
                                         </FormControl>
@@ -95,7 +95,7 @@ const ConversationPage = () => {
                             />
                             <Button className="col-span-12 lg:col-span-2 w-full" 
                             disabled={isLoading}>
-                                Generate
+                                Gerar
                             </Button>
                         </form>
                     </Form>
@@ -108,7 +108,7 @@ const ConversationPage = () => {
                     )}
 
                     {messages.length == 0 && !isLoading &&  (
-                        <Empty label="No conversation started"/>
+                        <Empty label="Nenhuma conversa iniciada"/>
                     )}
                     <div className="flex flex-col-reverse gap-y-4">
                         {messages.map((message, index) => (

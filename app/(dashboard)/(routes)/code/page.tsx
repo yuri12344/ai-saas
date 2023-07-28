@@ -65,8 +65,8 @@ const CodePage = () => {
     return (
         <div>
             <Heading 
-                title="Code generation"
-                description="Generate code using descriptive text."
+                title="Gerador de Código"
+                description="Gere código com ChatGPT4 utilizando prompt."
                 Icon={Code}
                 iconColor="text-green-700"
                 bgColor="bg-green-700/10"
@@ -87,7 +87,7 @@ const CodePage = () => {
                                             <Input className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                                             disabled={isLoading}
                                             id="prompt"
-                                            placeholder="Simple toggle toggle button using react hooks"
+                                            placeholder="Um contador simples de 0 até 10 com Python"
                                             {...field}
                                             />
                                         </FormControl>
@@ -109,7 +109,7 @@ const CodePage = () => {
                     )}
 
                     {messages.length == 0 && !isLoading &&  (
-                        <Empty label="No conversation started"/>
+                        <Empty label="Nenhum código gerado"/>
                     )}
                     <div className="flex flex-col-reverse gap-y-4">
                         {messages.map((message, index) => (
