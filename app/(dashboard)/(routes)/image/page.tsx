@@ -1,6 +1,6 @@
 "use client";
 
-import axios from "axios";
+import { axios } from "@/lib/axios" ; 
 import * as z from "zod";
 import { ImageIcon, Download } from "lucide-react"
 import { useForm } from "react-hook-form"
@@ -28,7 +28,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
-import { cn } from "@/lib/utils";
 import { Card, CardFooter } from "@/components/ui/card";
 
 import {

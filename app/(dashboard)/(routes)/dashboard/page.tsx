@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation"
 import { Card } from "@/components/ui/card"
 import { cn } from "@/lib/utils";
 
-const tools = [
+export const tools = [
   {
     label: "Conversation",
     icon: MessageSquare,

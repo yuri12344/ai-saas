@@ -1,6 +1,6 @@
 "use client";
 
-import axios from "axios";
+import { axios } from "@/lib/axios" ;  
 import * as z from "zod";
 import { Code } from "lucide-react"
 import { useForm } from "react-hook-form"
