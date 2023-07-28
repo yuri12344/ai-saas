@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useRouter } from "next/navigation"
 import { ChatCompletionRequestMessage } from "openai";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
 
 import { Heading } from "@/components/heading"
 import { 
@@ -49,11 +50,11 @@ const ConversationPage = () => {
             const response = await axios.post("/api/conversations", {
                 messages: newMessages,
             })
-
+            
             setMessages((current) => [...current, userMessage, response.data])
             form.reset()
         } catch (error: any) {
-            // TODO: Open Pro Modal
+            toast.error("Something went wrong")
             console.log("[CONVERSATION_ERROR] ", error)
         } finally {
             router.refresh();

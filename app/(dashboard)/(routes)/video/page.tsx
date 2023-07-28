@@ -21,6 +21,7 @@ import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 
 import { formSchema } from "./constants";
+import toast from "react-hot-toast";
 
 const VideoPage = () => {
     const router = useRouter();
@@ -45,7 +46,7 @@ const VideoPage = () => {
 
             form.reset()
         } catch (error: any) {
-            // TODO: Open Pro Modal
+            toast.error("Something went wrong")
             console.log("[CONVERSATION_ERROR] ", error)
         } finally {
             router.refresh();

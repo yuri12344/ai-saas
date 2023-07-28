@@ -10,7 +10,7 @@ axios.interceptors.response.use(
   (error) => {
     if (error?.response?.status == 403) {
       useProModal.getState().onOpen();
-    }
+    } 
     return Promise.reject(error);
   }
 );

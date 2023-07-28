@@ -26,6 +26,7 @@ import { BotAvatar } from "@/components/bot-avatar";
 import { cn } from "@/lib/utils";
 
 import { formSchema } from "./constants";
+import toast from "react-hot-toast";
 
 const CodePage = () => {
     const router = useRouter();
@@ -54,7 +55,7 @@ const CodePage = () => {
             setMessages((current) => [...current, userMessage, response.data])
             form.reset()
         } catch (error: any) {
-            // TODO: Open Pro Modal
+            toast.error("Something went wrong")
             console.log("[CONVERSATION_ERROR] ", error)
         } finally {
             router.refresh();

@@ -35,6 +35,7 @@ import {
     amountOptions,
     resolutionOptions
 } from "./constants";
+import toast from "react-hot-toast";
 
 
 const ImagePage = () => {
@@ -63,7 +64,7 @@ const ImagePage = () => {
             setImages(urls)
             form.reset()
         } catch (error: any) {
-            // TODO: Open Pro Modal
+            toast.error("Something went wrong")
             console.log("[CONVERSATION_ERROR] ", error)
         } finally {
             router.refresh();
